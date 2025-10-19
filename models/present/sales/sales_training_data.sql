@@ -1,5 +1,5 @@
 with clothes_cat_training as (
-    select date, revenue
+    select date as sales_date, revenue
     from {{ref('sales')}}
     where category = 'Clothing'
 )
