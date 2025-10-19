@@ -6,7 +6,7 @@ with sales_predict as (
         region::VARCHAR as region, 
         units_sold::INT as units,
         revenue::FLOAT as revenue
-    from {{ref("core_sales_training")}}
+    from {{ref("core_sales_predict")}}
 )
 
 select * from sales_predict
