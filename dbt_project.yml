@@ -27,10 +27,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_testing:
-    land_raw:
-      +database: land_raw
-      mocksales:
-        +schema: mocksales
     core:
       materialized: view
       +database: core
