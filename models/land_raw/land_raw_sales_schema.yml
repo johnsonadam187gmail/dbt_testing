@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+- name: land_raw_sales_data
+  database: LAND_RAW
+  schema: MOCKSALES
+  tables:
+      - name: SALES_TRAINING_DATA  
+      - name: SALES_PREDICT_DATA
