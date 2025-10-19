@@ -1,5 +1,5 @@
 with clothes_sales_predictions as(
-    select date, revenue
+    select date as sales_date, revenue
     from {{ref('predict')}}
     where category = 'Clothing'
 )
